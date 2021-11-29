@@ -1,0 +1,295 @@
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url("fonts/Gilroy-medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    font-weight: bold;
+    src: url("fonts/Gilroy-bold.woff2") format("woff2");
+}
+*{
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+:root {
+    --black-color: #070707;;
+  }
+header{
+    margin: auto auto 100px; /*top  right/left  bottom */
+    max-width: 940px;
+}
+nav a{
+    font-family: Gilroy-Bold;
+    color: var(--black-color);
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    padding: 32px 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #828282;
+}
+
+p{
+    font-family: Gilroy-Medium;
+    line-height: 22px;
+    font-size: 18px;
+}
+h2{
+    font-size: 34px;
+    line-height: 42px;
+
+    font-family: Gilroy-Bold;
+}
+.container{
+    color: var(--black-color);
+    margin-top: 40px;
+}
+.container .bio{
+    display: flex;
+    justify-content: space-between;
+}
+.container .bio .languages{
+    font-family: Gilroy-Bold;
+    writing-mode: vertical-rl;
+    transform:  rotate(-180deg);
+}
+
+.container .bio .name{
+    font-family: Gilroy-Bold;
+    font-size: 48px;
+    line-height: 60px;
+}
+.container .bio .vocation{
+    display: flex;
+    align-items: center;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+}
+.container .profile-photo{
+   /**/ margin-top: 54px;
+    height: 390px;
+    width: auto;
+    max-width: 940px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/profile-photo.png);
+
+}
+
+main .about-me{
+    height: 500px;
+    background-color: #F6F6F6;
+}
+main .about-me h2{
+    padding-top: 120px;
+}
+main .about-me p{
+    margin:18px auto 44px;
+}
+main .skills{
+    padding: 90px 0px 110px;
+}
+main .skills p{
+    margin-top: 70px;
+}
+main .programs-container{
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+}
+main .programs-container .program{
+    margin: 0 22px;
+}
+main .programs-container p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: Gilroy-Medium;
+    color: #828282;
+}
+
+@media only screen and (max-width: 1024px) {
+    header{
+        margin: auto 20px 100px;
+    }
+    nav a{
+        padding: 20px 0;
+    }
+    main .programs-container{
+        margin-top: 85px;
+        display: grid;
+        grid-template-columns: 42% 42%;
+        row-gap: 60px;
+    }
+    div.star
+    {
+        margin: 0 3px;
+    }
+    main .image.one,
+    main .image.two,
+    main .image.three{
+        margin: auto 20px;
+        min-height: inherit;
+        height: 50vw;
+    }
+
+}
+
+
+main .programs-container .rating{
+    display: flex;
+    justify-content: center;
+}
+.star{
+    margin: 0 9px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    background-image: url(img/star.svg);
+}
+.filled{
+    background-image: url(img/filled-star.svg);
+}
+.program-icon{
+    margin: auto;
+    padding: 1px;
+    height: 89px;
+    width: 89px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.inner-svg{
+    height: 100%;   
+    position: relative;
+    z-index:-1;
+}
+.photoshop .program-icon{
+    background-image:url("img/photoshop.svg");
+}
+.photoshop .inner-svg{
+    background: radial-gradient(75.99% 75.64% at 32.94% 22.44%, rgba(52, 54, 78, 0.98) 0%, #0C0824 100%);
+}
+
+.illustrator .program-icon{
+    background-image:url("img/illustrator.svg");
+}
+.illustrator .inner-svg{ 
+    background: radial-gradient(76% 75.63% at 32.97% 22.44%, rgba(66, 51, 37, 0.98) 0%, #1C0A00 100%);
+}
+.after-effects .program-icon{
+    background-image:url("img/after-effects.svg");
+}
+.after-effects .inner-svg{
+    background: radial-gradient(76% 75.63% at 32.97% 22.42%, rgba(68, 47, 85, 0.98) 0%, #12002C 100%);
+}
+.figma p{
+    padding-bottom: 20px;
+}
+.figma .program-icon{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:url("img/figma.svg");
+}
+
+main .portfolio-container{
+    padding-top: 110px;
+    background-color: #F6F6F6;
+}
+main .portfolio-container h2{
+    margin-bottom: 46px;
+}
+
+main .portfolio-container .project-container .link{
+    padding: 44px 0 99px 0;
+}
+
+main .portfolio-container .project-container .link a{
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black-color);
+}
+
+main .image{
+    margin: auto;
+    min-height: 500px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .image.one{
+    background-image: url("img/work-1.png");
+
+}
+main .image.two{
+    background-image: url("img/work-2.png");
+
+}
+main .image.three{
+    background-image: url("img/work-3.png");
+
+}
+
+
+footer h2{
+    margin: 120px auto 20px auto;
+}
+footer button{
+    margin: 30px auto 85px auto;
+    font-family: Gilroy-Bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    display: inline-block;
+    width: 180px;
+    height: 42px;
+    border: none;
+    background:var(--black-color);
+    color:#fff;
+    border-radius: 20px;
+}
+footer .social-links {
+    display: flex;
+    justify-content:center;
+}
+footer .social-links .link{
+    margin: 0 30px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+footer .social-links .linkedin{
+    background-image: url(img/linkedin.svg);
+}
+footer .social-links .instagram{
+    background-image: url(img/instagram.svg);
+}
+footer .social-links .behance{
+    background-image: url(img/behance.svg);
+}
+footer .social-links .dribble{
+    background-image: url(img/dribble.svg);
+}
+footer p{
+    color:#000000;
+}
+footer .bottom-text{
+    color: #828282;
+    margin: 45px auto 100px auto;
+}
